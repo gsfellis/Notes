@@ -1,7 +1,19 @@
 # C# Notes
 
-## .NET
+## Keywords
+* namespace - 
+* class - 
+* public - An **Access Modifier** that allows the member to be accessed from outside the class
+* private - Default **Access Modifier** that only allows the member to be accessed from within the class
+* void - Applied to methods that do not return a value
+* new - 
+* static - Can be applied to fields or methods that can be accessed in code without an instance of the class. (Console.WriteLine) 
 
+## Types
+
+## Operators
+
+## .NET
 ### What is .NET?
 * CLR
   * Common Language Runtime
@@ -17,19 +29,9 @@
     * Reusable software to build applications
     * So big, can't know it all
 
-## C# Command Line Compiler
+### C# Command Line Compiler
 * Transforms C# code into Microsoft Intermediate Language (MSIL)
   * MSIL code for the CLR to translate to Native (Similar to Java)
-
-## Keywords
-* namespace - 
-* class - 
-* public - An **Access Modifier** that allows the member to be accessed from outside the class
-* private - Default **Access Modifier** that only allows the member to be accessed from within the class
-* void - 
-* new - 
-
-## Types
 
 ## Classes
 * Classes are nouns! Person, place, thing or idea!
@@ -66,3 +68,12 @@
 ## OOP
 * Encapsalation
   * Enclose or hide details
+  * Group details together
+
+## Misc
+* Code snippets!
+  * ctor - constructor
+  * cw - Console.WriteLine
+  * prop - property
+* Math class
+  * Math.Min, Math.Max, etc
