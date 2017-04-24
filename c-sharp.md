@@ -266,5 +266,3 @@
   float test1 = 1.5f
   Console.WriteLine((int)test1)  // prints "1"
   ```
-
-## Test
