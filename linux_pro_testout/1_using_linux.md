@@ -33,3 +33,81 @@ echo $SHELL
 ```bash
 echo $PATH
 ```
+### 1.3.1 Text Editors
+* **vi** or **vim**
+* different modes
+   * command mode - Can't edit the file but can move around in the file
+      * dw - delete word after cursor with space (cuts for pasting)
+      * de - delete word after cursor without space (cuts for pasting)
+      * d$ - delete to end of line (cuts for pasting)
+      * dd - deletes entire line (cuts for pasting)
+      * p - paste at cursor
+      * u - undo last action
+      * D - delete to end of line without cut
+      * yy - copy line for pasting
+      * a - append after cursor
+      * A - append after current line
+      * C - move to end of line
+      * cc - Change text of the entire line      
+      * Ctrl+g - displays status line
+      * /*term* - search forwards for *term*
+      * ?*term* - search backwards for *term*      
+   * Insert Mode - Can actually edit the file
+      * I, INS, S, O, A will all start insert mode but each have different functions
+      * Look for --INSERT-- at the bottom of the screen
+   * Replace mode - Press INS again from Insert Mode
+      * Look for --REPLACE-- at the bottom
+   * Press ESC to return to Command Mode
+   * Command line mode - Press : to enter commands
+      * w - write, w filename - write to filename
+      * q - quit
+      * wq or exit - Saves file and quits
+      * q! - quit without saving changes
+      * w! - overwrite current file
+      * e! - revert changes since last write
+### 1.4.1 Aliases
+* Shortcut to a command
+* ll - alias for 'ls -l'
+* .. - alias for 'cd ..'
+* **alias** will display all aliases available
+   * **alias details='ls -l'** creates an alias called details that runs 'ls -l'. Can also overwrite existing details alias
+* **unalias [name]** removes an alias
+### 1.5 Environment Variables
+* A setting that defines the user's computing environment.
+* Convention is to use uppercase characters, (e.g. SHELL and EUID)
+* initially assigned default values from the shell configuration files.
+* Can modify the default values assigned to an environment variable
+* Modifying values assigned to environment variables only apply to the current session. You must **export** the modified variables to change other shell sessions.
+* TO make changes persistent across system reboots, add the change to the appropriate shell configuration file(s)
+* You can define non-environmnet variables at the shell prompt.
+* Common environmnet variables:
+   * BASH - location of the bash executable file
+   * SHELL - the user's login shell
+   * CPU - the type of CPU
+   * DISPLAY - Location where X Windows output goes.
+   * ENV - Location of the config file for current shell
+   * EUID - ID number of the current user
+   * HISTFILE - File name where past commands are stored
+   * HISTSIZE - Number of past commands in HISTFILE for current session
+   * HISTFILESIZE - Number of past commands in HISTFILE for multople sessions
+   * HOME - Absolute path of the user's home directory
+   * HOST - name of the computer
+   * HOSTNAME - same as HOST used by different distributions
+   * INFODIR - The path to the computer's informatiopn pages
+   * LOGNAME - The username of the current user
+   * MAIL - The path to the current user's mailbox
+   * MANPATH - The path to the computer's man pages
+   * OLDPWD - The directory the user was in prior to switching to the current directory
+   * OSTYPE - The type os OS. Usually, this is Linux.
+   * PATH - The directory paths used to search for programs and files.
+   * PS1 - The characters the shell uses to define what the shell prompt looks like
+   * PWD - The path of the current working directory
+   * LANG - The language that the OS uses
+* Common environment variable commands
+   * echo $[variable]
+   * env
+   * set - set shell environment varaible. Without options, display the set environment variables for the system
+   * unset [variable] - Remove an environment variable
+   * [VARIABLE]=[value] - change the value assigned to a variable
+   * export [variable] - Export a variable to make it available to all other shell sessions
+### 1.6 Shell Configuration Files
