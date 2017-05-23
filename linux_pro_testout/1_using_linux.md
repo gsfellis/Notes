@@ -103,7 +103,7 @@ echo $PATH
   * EUID - ID number of the current user
   * HISTFILE - File name where past commands are stored
   * HISTSIZE - Number of past commands in HISTFILE for current session
-  * HISTFILESIZE - Number of past commands in HISTFILE for multople sessions
+  * HISTFILESIZE - Number of past commands in HISTFILE for multiple sessions
   * HOME - Absolute path of the user's home directory
   * HOST - name of the computer
   * HOSTNAME - same as HOST used by different distributions
@@ -119,7 +119,7 @@ echo $PATH
   * LANG - The language that the OS uses
 * Common environment variable commands
   * echo $[variable]
-  * env
+  * env - displays environment variables for all child sessions
   * set - set shell environment varaible. Without options, display the set environment variables for the system
   * unset [variable] - Remove an environment variable
   * [VARIABLE]=[value] - change the value assigned to a variable
@@ -218,5 +218,28 @@ echo $PATH
 ## 1.10 Links
 
 ## 1.11 Filesystem Hierarchy Standard (FHS)
+
+The Filesystem Hierarchy Standard (FHS) defines a consistent file system for Linux systems by defining a standard set of directories, subdirs, and files. FHS is a subset of the Linux Standards Base (LSB) which is an organization and a set of guidelines for promoting a set of standards to increase Linux distribution compatibility.
+
+| Directory | Description |
+| --- | --- |
+| / | The **/** character represents the root directory. ALl other directories are located beneath the **/** (root) directory of the system. |
+| /bin | **/bin** directory contains binary commands that are available to all users |
+| /boot | **/boot** directory contains the kernel and bootloader files | 
+| /dev | **/dev** directory contains device files that represent the devices used by the system, such as a hard drive, mouse, and printer. |
+| /etc | **/etc** contains configuration files specific to the system. |
+| /home | **/home** contains (by default) the user home directories. |
+| /lib | **/lib** contains shared program libraries and kernel modules. |
+| /media | **/media** is used to mount removable media |
+| /mnt | **/mnt** is used for temporarily mounting remote file systems. |
+| /opt | **/opt** contains additional programs on the system |
+| /proc | **/proc** contains information about the system state and processes. |
+| /root | **/root** is the root user's home directory, not to be confused with the root **/** of the file system. |
+| /sbin | **/sbin** contains system binary commands. |
+| /srv | **/srv** contains files for services such as HTTP and FTP servers |
+| /sys | **/sys** contains the *sysfs* virtual file system which displays information about devices and drivers. |
+| /tmp | **/tmp** contains temporary files created by programs during system use. |
+| /usr | **/usr** contains system commands and utilities. |
+| /var | **/var** directory contains data files that change constantly like user mailboxes, print queues, and log files. |
 
 ## 1.12 Locating and Searching Files
